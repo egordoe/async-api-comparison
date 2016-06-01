@@ -29,3 +29,8 @@ The scenario above is currently implemented using
 * Scala's Future 
     https://github.com/gozela/async-api-comparison/blob/master/src/main/scala/edoudkin/samples/ScalaFutures.scala
 
+|Operation|Scala's Future|Java's Future|Java8's CompletableFuture| JavaRx Observable |
+|---------|--------------|-------------|-------------------------|-------------------|
+| Mapping result of the task | `Future.map()` | N/A | `CompletableFuture.thenApply()` | `Observable.map()` |
+| Pipelining 2 tasks | `Future.flatMap()` | N/A | `CompletableFuture.thenCompose()` | `Observable.flatMap()` |
+| Combining results of 2 independent tasks| `Future.zip()` | N/A | `CompletableFuture.thenCombine()` | `Observable.zipWith()`|
