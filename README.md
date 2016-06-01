@@ -21,11 +21,11 @@ The scenario consists of 3 asynchronous stages
 The scenario above is currently implemented using 
 
 * Java's Future 
-    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/JavaFutures.java
+    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaFutures.java
 * Java's CompletableFuture
-    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/JavaCompletableFutures.java
+    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaCompletableFutures.java
 * ReactiveX / JaraRx
-    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/RxObservables.java
+    https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/RxObservables.java
 * Scala's Future 
-    https://github.com/gozela/async-api-comparison/blob/master/src/main/scala/ScalaFutures.scala
+    https://github.com/gozela/async-api-comparison/blob/master/src/main/scala/edoudkin/samples/ScalaFutures.scala
 
