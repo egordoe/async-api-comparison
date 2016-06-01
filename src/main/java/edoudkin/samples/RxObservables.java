@@ -1,3 +1,5 @@
+package edoudkin.samples;
+
 import org.apache.commons.lang3.tuple.Pair;
 import rx.Observable;
 

@@ -1,3 +1,5 @@
+package edoudkin.samples
+
 import scala.concurrent.duration._
 import scala.concurrent.{Await, ExecutionContext, Future}
 
