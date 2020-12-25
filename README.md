@@ -1,32 +1,17 @@
 # async-api-comparison
 
-The intention of this repository is to get a practical comparison of different Java and Scala frameworks of organizing collaborative work of multiple asynchronous tasks, including
-* mapping task result (`map()`)
-* starting a new async task as the initial task is done (`flatMap()`)
-* zipping the results of 2 tasks (`zip()`)
-* etc.
+The goal is a practical comparison of various Java and Scala APIs of coordinating asyncronious execution in a functional manner, including
+* tranforming the result of a completed async task (`map()`);
+* chaining async tasks (`flatMap()`);
+* combining multiple tasks (`zip()`).
 
-The comparison is made by implementing the same sample scenario (described below) and it focuses only on the stylistic facet of the API, mainly concerning of aspects such as code readability, maintainability, verboseness, how error prone the code we get, etc.)
-
-The sample scenario is very basic.
-
-![Alt](http://dl.dropboxusercontent.com/u/100788417/images/async_frameworks.jpeg)
-
-It consists of 3 stages
-
-* 2 initial tasks F1 and F2 which produce some integers
-* As result of F1 or F2 is available, the corresponding result is mapped to some other value (multiplied by 10, for instance)
-* Finally, as the both results of F1 and F2 are available and mapped, they are combined together and they both passed as an input to third task F3
-
-The scenario above is currently implemented using 
-
-* Java's Future 
+* Java Future's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaFutures.java
-* Java's CompletableFuture
+* Java CompletableFuture's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaCompletableFutures.java
 * ReactiveX / JaraRx
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/RxObservables.java
-* Scala's Future 
+* Scala Future's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/scala/edoudkin/samples/ScalaFutures.scala
 
 |Operation|Scala's Future|Java's Future|Java8's CompletableFuture| JavaRx Observable |
