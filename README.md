@@ -5,15 +5,17 @@ The goal is a practical comparison of various Java and Scala APIs of coordinatin
 * chaining async tasks (`flatMap()`);
 * combining multiple tasks (`zip()`).
 
-* Java Future's
+
+#### Java Future's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaFutures.java
-* Java CompletableFuture's
+#### Java CompletableFuture's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/JavaCompletableFutures.java
-* ReactiveX / JaraRx
+#### ReactiveX / JaraRx
     https://github.com/gozela/async-api-comparison/blob/master/src/main/java/edoudkin/samples/RxObservables.java
-* Scala Future's
+#### Scala Future's
     https://github.com/gozela/async-api-comparison/blob/master/src/main/scala/edoudkin/samples/ScalaFutures.scala
 
+#### Summary
 |Operation|Scala's Future|Java's Future|Java8's CompletableFuture| JavaRx Observable |
 |---------|--------------|-------------|-------------------------|-------------------|
 | Mapping result of the task | `Future.map()` | N/A | `CompletableFuture.thenApply()` | `Observable.map()` |
